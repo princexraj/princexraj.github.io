@@ -1,0 +1,35 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <div class="post-content">
+    {{ with .Site.GetPage "/about" }}
+      {{ .Content }}
+    {{ end }}
+  </div>
+</article>
+
+<header class="page-header">
+  <h2>Blog posts</h2>
+</header>
+
+<div class="post-content">
+  <ul>
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- if site.Params.ShowAllPagesInArchive }}
+{{- $pages = site.RegularPages }}
+{{- end }}
+
+{{- range $pages }}
+{{- if eq .Kind "page" }}
+    <li>
+      <a href="{{ .Permalink }}">{{- .Title }}</a>
+      {{- if not (.Param "hideMeta") }}
+      <span style="color: var(--secondary);"> — {{ .Date.Format "January 2, 2006" }}</span>
+      {{- end }}
+    </li>
+{{- end }}
+{{- end }}
+  </ul>
+</div>
+
+{{- end }}{{/* end main */}}
