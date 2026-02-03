@@ -12,7 +12,7 @@ Most of my work sits around AI, products, and experiments. I'm less interested i
 
 ### What I'm Doing
 
-Right now, I'm building at **Avni Labs**.  
+Right now, I'm building at **Avni Labs AI**.  
 The focus is simple: use AI to solve real problems without overcomplicating things.
 
 I care a lot about:
