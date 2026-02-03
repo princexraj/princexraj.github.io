@@ -1,4 +1,4 @@
-baseURL = "https://princexraj.github.io/portfolio/"
+baseURL = "https://princexraj.github.io/"
 languageCode = "en-us"
 title = "Prince Raj"
 theme = "PaperMod"
@@ -7,6 +7,9 @@ theme = "PaperMod"
   env = "production"
   description = "Founder of avnilabs.ai - Building AI Products"
   author = "Prince Raj"
+
+  # Favicon
+  favicon = "/favicon.ico"
 
   # Theme settings
   defaultTheme = "auto" # auto, light, dark
